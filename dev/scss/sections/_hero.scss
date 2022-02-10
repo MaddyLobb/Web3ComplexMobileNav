@@ -1,0 +1,66 @@
+#hero {
+
+    height: 100vh;
+    width: 100vw;
+
+    @include md{
+        width: 80vw;
+    }
+
+    div{
+        overflow: hidden !important;
+        height: 100%;  
+    }
+
+    article {
+
+        align-items: center;
+        display: flex;
+        height: 90%;
+        //width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+        @include md{
+            width: 70%;
+        }
+
+
+        section {
+            color: $black;
+            text-align: left;
+
+            h1 {
+                font-size: rem-calc(44);
+                font-family: 'Italiana', serif;
+                font-weight: 900;
+
+                @include md {
+                    font-size: rem-calc(54);
+                }
+
+                @include lg {
+                    font-size: rem-calc(64);
+                }
+            }
+
+            p {
+                font-size: rem-calc(30);
+                font-family: 'Italiana', serif;
+                font-weight: 400;
+
+                @include md {
+                    font-size: rem-calc(40);
+                    font-weight: 400;
+                }
+
+                @include lg {
+                    font-size: rem-calc(50);
+                    font-weight: 400;
+                }
+            }
+
+        }
+    }
+   
+}
