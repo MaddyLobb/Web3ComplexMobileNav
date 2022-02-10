@@ -1,0 +1,113 @@
+#large-nav{
+    display: none;
+
+    @include md{
+        display: block;
+    }
+
+    nav{
+        @include md{
+            height: 100vh;
+            position: fixed;
+            top:0;
+            right:0;
+            z-index: 20;
+        }
+
+        div{
+            @include md{
+                height: 100vh;  
+            }
+
+            ul{
+                @include md{
+                    height: 100%;
+                    display: flex;
+                }
+        
+                .large-nav-container{
+                
+                    .large-nav-content{
+                        @include md{
+                            height:100%;
+                        }
+        
+                        aside{
+                            @include md{
+                                width: 60px;
+                                height: 100%;
+                                cursor: pointer;
+                            }
+
+                            h1{
+                                @include md{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: rem-calc(20);
+                                    writing-mode: vertical-rl; 
+                                    position: absolute;
+                                    top: 45%;
+                                    transform: translate(70%,-50%);
+                                }  
+                            }
+
+                            .large-main-title:hover, .large-main-title:active{
+                                text-decoration: underline;
+                            }
+                        }
+        
+                        .large-nav-content-element{
+
+                            @include md{
+                                width: 0px;
+                                height: 100%;
+                                transition: 0.25s;
+                            }
+
+                            .large-nav-content-text{
+                                display: none;
+                                
+                                @include md{
+                                    display: block;
+                                    overflow: hidden;
+                                }
+
+                            }
+                        }
+                    }
+        
+                }
+            }
+        
+    
+            #bar-2{
+                @include md{
+                    background-color: beige;
+                }
+            }
+    
+            #bar-3{
+                @include md{
+                    background-color: cadetblue;
+                }
+            }
+    
+            #bar-4{
+                @include md{
+                    background-color: coral;
+                }
+            }
+    
+        }
+
+    }
+
+}
+
+.active{
+    width: 85vw !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}

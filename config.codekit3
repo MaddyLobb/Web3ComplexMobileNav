@@ -71,12 +71,12 @@
       "oAP" : "\/dev\/content\/hero.html",
       "oF" : 0
     },
-    "\/dev\/content\/mobileabout.kit" : {
+    "\/dev\/content\/largenav.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/mobileabout.html",
+      "oAP" : "\/dev\/content\/largenav.html",
       "oF" : 0
     },
     "\/dev\/content\/mobilecommunity.kit" : {
@@ -150,6 +150,39 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/dev\/js\/burgerAnimation-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/largeNavBarEnter.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/largeNavBarEnter-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/largeNavResize-min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/dev\/js\/largeNavResize-min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/largeNavSlide.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/largeNavSlide-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -385,7 +418,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_mobileabout.scss" : {
+    "\/dev\/scss\/sections\/_largenav.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -394,7 +427,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_mobileabout.css",
+      "oAP" : "\/dev\/scss\/sections\/_largenav.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

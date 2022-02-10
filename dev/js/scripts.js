@@ -2,6 +2,8 @@ import { burgerTL } from "./burgerAnimation"
 import { displayWindowSizeMobile } from "./mobileNavResize";
 import { mobileMenuEnter } from "./mobileNavAnimation";
 import { mobileScrollPage } from "./mobileNavScrollTo";
+import { setUpMenu } from "./largeNavSlide";
+import { barTL } from "./largeNavBarEnter";
 //import { mobileNavAnimationTL } from "./mobileNavClickAnimation";
 
 
@@ -31,10 +33,6 @@ function openCloseMenu(){
 burgerButton.addEventListener("click", openCloseMenu);
 let mobileNavButtons = document.querySelectorAll(".mobile-main-title");
 
-// for(let i = 0; i < mobileNavButtons.length; i ++){
-//     mobileNavButtons[i].addEventListener("click", openCloseMenu)
-// }
-
 for (const button of mobileNavButtons){
     button.addEventListener("click", checkScrolling);
     button.addEventListener("click", openCloseMenu);
@@ -47,6 +45,12 @@ function checkScrolling(e) {
         mobileScrollPage(indexValue);
     }
 }
+
+window.addEventListener('load', function () {
+    console.log("load");
+    setUpMenu();
+    barTL.play();
+});
 
 
 //part of my attemt to make nav element grow when clicked//

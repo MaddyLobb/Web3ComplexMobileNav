@@ -1,101 +1,108 @@
-nav{
+#mobile-nav{
 
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top:0;
-    right:0;
-    z-index: 20;  
-
-    //burger css//
-
-    #burger-container {
-        justify-content: flex-end;
-        display: flex;
-        padding: 30px;
-        right: 0;
-        position: absolute;
-        cursor: pointer;
-
-        #burger{
-            z-index: 30;
-            height: 40px;
-            width: 40px;
-        }
-
-    }
-
-    //mobile layout css//
-
-    ul{
-        height: 100%;
-        width: 100%;
-        min-height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-
-        .mobile-nav-container{
-            display: flex; 
-            flex-basis: calc(50% - 0px);  
-            justify-content: center;
-            flex-direction: column;
-
-            .mobile-nav-content{
-                aside{
-                    cursor: pointer;
-
-                }
-
-                .mobile-content-element{
-                    display: none;
-
-                }
-
-            }
-        }
-
-        //maint title or "clickable word" font choices//
-
-        #mobile-about-h1{
-        transform: rotate(-45deg);  
-        }
-
-        #mobile-community-h1{
-            transform: rotate(45deg);  
-        }
-
-        #mobile-shop-h1{
-            transform: rotate(45deg); 
-        }
-
-        #mobile-food-h1{
-            transform: rotate(-45deg); 
-        }
-
-        .mobile-main-title{
+    nav{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top:0;
+        right:0;
+        z-index: 20;  
+    
+        //burger css//
+    
+        #burger-container {
+            justify-content: flex-end;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: rem-calc(20);
+            padding: 30px;
+            right: 0;
+            position: absolute;
+            cursor: pointer;
+    
+            @include md{
+                display: none;
+            }
+    
+            #burger{
+                z-index: 30;
+                height: 40px;
+                width: 40px;
+            }
+    
         }
-
-        //background color css for each nav element//
-
-        #mobile-about-box{
-            background-color: white;
-        }
-
-        #mobile-community-box{
-            background-color: beige;
-        }
-
-        #mobile-shop-box{
-            background-color: cadetblue;
-        }
-
-        #mobile-food-box{
-            background-color: coral;
+    
+        //mobile layout css//
+    
+        ul{
+            height: 100%;
+            width: 100%;
+            min-height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+    
+            .mobile-nav-container{
+                display: flex; 
+                flex-basis: calc(50% - 0px);  
+                justify-content: center;
+                flex-direction: column;
+    
+                .mobile-nav-content{
+                    aside{
+                        cursor: pointer;
+    
+                    }
+    
+                    .mobile-content-element{
+                        display: none;
+    
+                    }
+    
+                }
+            }
+    
+            //maint title or "clickable word" font choices//
+    
+            #mobile-about-h1{
+            transform: rotate(-45deg);  
+            }
+    
+            #mobile-community-h1{
+                transform: rotate(45deg);  
+            }
+    
+            #mobile-shop-h1{
+                transform: rotate(45deg); 
+            }
+    
+            #mobile-food-h1{
+                transform: rotate(-45deg); 
+            }
+    
+            .mobile-main-title{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: rem-calc(20);
+            }
+    
+            //background color css for each nav element//
+    
+            #mobile-about-box{
+                background-color: white;
+            }
+    
+            #mobile-community-box{
+                background-color: beige;
+            }
+    
+            #mobile-shop-box{
+                background-color: cadetblue;
+            }
+    
+            #mobile-food-box{
+                background-color: coral;
+            }
+    
         }
 
     }

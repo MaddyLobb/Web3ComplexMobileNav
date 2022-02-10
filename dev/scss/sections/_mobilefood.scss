@@ -1,6 +1,10 @@
 #mobile-food{
     height: 100vh;
     width: 100vw;
+    
+    @include md{
+        display: none;
+    }
 
     .mobile-food-content-all{
         height: 100%;

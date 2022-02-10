@@ -1,0 +1,1 @@
+import{gsap}from"gsap";export function DisplayWindowSizeLarge(){let e=document.querySelector(".large-nav-container").offsetHeight;document.documentElement.clientWidth<=1024?(console.log("hide"),gsap.set(".large-nav-container",{y:-e})):(console.log("un-hide"),gsap.set(".larg-nav-container",{y:0}))}
