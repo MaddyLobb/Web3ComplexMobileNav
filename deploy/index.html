@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css">
-    <title>Assignment 1</title>
+    <title>Complex Nav</title>
 </head>
 
 <body>
@@ -34,6 +33,66 @@
             </article>
         </div>
     </section>
+
+    <nav>
+        <div>
+            <section id="burger-container">
+                <div id="burger">
+                    <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 16">
+                        <g stroke="#000" stroke-linecap="round">
+                          <path id="top" class="lines" d="M1 1h33"/>
+                          <path id="middle" class="lines" d="M1.5 8.5h33"/>
+                          <path id="bottom" class="lines" d="M1.5 15.5h33"/>
+                        </g>
+                      </svg>
+                </div>
+            </section>
+        </div>
+    
+        <ul class="full-mobile-nav">
+            <li id="mobile-about-box" class="mobile-nav-container">
+                <section class="mobile-nav-content">
+                    <aside>
+                        <h1 class="mobile-content-element" class="mobile-nav-btns" id="mobile-about"> ABOUT</h1>
+                    </aside>
+                    <section class="mobile-content-element">
+                        <p class="mobile-content-text">Content goes here</p>
+                    </section>
+                </section>
+            </li>
+    
+            <li id="mobile-community-box" class="mobile-nav-container">
+                <section class="mobile-nav-content">
+                    <aside>
+                        <h1 class="mobile-content-element" class="mobile-nav-btns" id="mobile-community"> COMMUNITY</h1>
+                    </aside>
+                    <section class="mobile-content-element">
+                        <p class="mobile-content-text">Content goes here</p>
+                    </section>
+                </section>
+            </li>
+            <li id="mobile-shop-box" class="mobile-nav-container">
+                <section class="mobile-nav-content">
+                    <aside>
+                       <h1 class="mobile-main_title" class="mobile-nav-btns" id="mobile-shop">SHOP</h1>
+                    </aside>
+                    <section class="mobile-content-element">
+                        <p class="mobile-content-text">Content goes here</p>
+                    </section>
+                </section>
+            </li>
+            <li id="mobile-food-box" class="mobile-nav-container">
+                <section class="mobile-nav-content">
+                    <aside>
+                        <h1 class="mobile-main_title" class="mobile-nav-btns" id="mobile-food">FOOD</h1>
+                    </aside>
+                    <section class="mobile-content-element">
+                        <p class="mobile-content-text">Content goes here</p>
+                    </section>
+                </section>
+            </li>
+        </ul>
+    </nav>
 
     <script type="module" src="js/scripts-min.js"></script>
 
