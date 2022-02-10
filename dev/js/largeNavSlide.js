@@ -2,6 +2,16 @@ let rightSide = document.querySelectorAll("large-nav-container .large-nav-conten
 let buttons = document.querySelectorAll(".large-nav-container aside");
 let currentIndex =  -1;
 
+// if(document.querySelectorAll(".large-nav-container aside").clicked == true)
+// {
+//    alert("button was clicked");
+// }
+const btn = document.querySelectorAll(".large-nav-container aside");
+  btn.onclick = function(){
+
+  console.log("CLICKED!");
+  }
+
 export function setUpMenu(){
     buttons.forEach((button , i) => {
         button.addEventListener("click", () => {
