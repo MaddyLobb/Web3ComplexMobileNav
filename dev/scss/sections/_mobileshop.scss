@@ -1,0 +1,40 @@
+#mobile-shop{
+    height: 100vh;
+    width: 100vw;
+
+    .mobile-shop-content-all{
+        height: 100%;
+        width: 100%;
+        min-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .mobile-shop-content-section{
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+
+            display: flex; 
+            flex-basis: calc(100% - 0px);  
+            justify-content: center;
+            flex-direction: column;
+
+            h1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            p{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    
+    #mobile-content-shop{
+        background-color: cadetblue;
+    }
+}

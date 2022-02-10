@@ -57,23 +57,23 @@ nav{
 
         //maint title or "clickable word" font choices//
 
-        #mobile-about{
+        #mobile-about-h1{
         transform: rotate(-45deg);  
         }
 
-        #mobile-community{
+        #mobile-community-h1{
             transform: rotate(45deg);  
         }
 
-        #mobile-shop{
+        #mobile-shop-h1{
             transform: rotate(45deg); 
         }
 
-        #mobile-food{
+        #mobile-food-h1{
             transform: rotate(-45deg); 
         }
 
-        .mobile-main_title{
+        .mobile-main-title{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -101,12 +101,12 @@ nav{
     }
 }
 
-//mobile layout when a Nav button is clicked//
+//mobile layout when a Nav button is clicked for my currently non working js//
 
-.mobile-active{
-    height: 100vh !important;
-    width: 100vw !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-}
+// .mobile-active{
+//     height: 100vh !important;
+//     width: 100vw !important;
+//     display: flex !important;
+//     justify-content: center !important;
+//     align-items: center !important;
+// }
